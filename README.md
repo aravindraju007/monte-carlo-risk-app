@@ -25,4 +25,4 @@ Assuming free tiers are exhausted:
 - EC2 t3.medium (London): ~$0.0416/hour. 4 instances for 2 hours ≈ $0.33
 - Firestore: $0.06/100K reads and writes (minimal for audit logs)
 - GAE: $0.05/hour beyond free tier, negligible for demo use
-![image](https://github.com/user-attachments/assets/3e4b385a-56d7-4435-b6bd-0b5b38393ce5)
+
