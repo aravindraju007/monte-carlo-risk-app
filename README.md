@@ -29,20 +29,21 @@ In terms of user’s point of view, the self-service cloudhosted web application
 ### A. Major System Components 
 This web application is implemented using GCP and AWS as cloud providers. The Monte Carlo simulation and hence the production of risk levels at the back end are performed using AWS Lambda or EC2 services. while The front end of the application is hosted on Google Cloud Platform. Front-end and back-end components are the two primary types of parts that make up a web application system. 
 
-1)	Back End: 
-  a)	Amazon API Gateway: 
-  b)	AWS defines an API gateway for requests and configuring integration responses. The REST API is used to redirect HTTP queries to AWS 
+**1)	Back End:** 
+  * a)	Amazon API Gateway: 
+ *  b)	AWS defines an API gateway for requests and configuring integration responses. The REST API is used to redirect HTTP queries to AWS 
     Lambda 
 
-  c)	AWS Lambda:
+  * c)	AWS Lambda:
     AWS Lambda leverages recent history's mean and standard deviation to build a considerably bigger collection of values with similar 
     properties. Risk is calculated at the 95th and 99th percentiles and then returned to the main python code, which will then be 
     transferred to the webpage, where the user sees it on the front end.. 
-  d)	EC2, AWS: 
+  * d)	EC2, AWS: 
      Similar to Lambda  Amazon's EC2 service can also be used to calculate signal risk. The key benefits of EC2 are its quick startup 
-     time and scalability of compute capacity. 
-3)	Front End.  
-   a)	(GAE) Google App Engine: 
+     time and scalability of compute capacity.
+    
+**3)	Front End.**  
+   * a)	(GAE) Google App Engine: 
      A Google App Engine application uses serverless technologies to host and develop large-scale online apps. GAE is used to host the 
      web application, which may be visited and tested. The application establishes a connection and executes the user's request via the 
      REST API. The Python Flask framework is used to implement the system. The user can enter required inputs and examine the results 
@@ -58,7 +59,8 @@ Google App Engine is used to host the web application., and when accessed, it op
 
 
 <img width="232" alt="image" src="https://github.com/user-attachments/assets/3c985a74-6d18-486e-8a9b-a5bc70994c79" />
-                            System components' interactions 
+ 
+**System components' interactions** 
 
 
 
