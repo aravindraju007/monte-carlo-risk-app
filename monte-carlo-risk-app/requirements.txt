@@ -1,0 +1,6 @@
+Flask==2.3.2
+gunicorn==21.2.0
+boto3==1.34.93
+yfinance==0.2.37
+pandas==2.2.2
+pandas_datareader==0.10.0
